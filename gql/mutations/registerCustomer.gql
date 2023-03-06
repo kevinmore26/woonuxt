@@ -1,3 +1,5 @@
+#import "~/gql/fragments/CustomerFragment.gql"
+
 mutation registerCustomer($input: RegisterCustomerInput!) {
   registerCustomer(input: $input) {
     customer {

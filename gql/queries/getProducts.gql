@@ -1,12 +1,7 @@
 #import "~/gql/fragments/SimpleProduct.gql"
 #import "~/gql/fragments/VariableProduct.gql"
 
-query getProducts(
-  $after: String
-  $slug: [String]
-  $first: Int = 100
-  $orderby: [ProductsOrderbyInput] = { field: DATE, order: DESC }
-) {
+query getProducts($after: String, $slug: [String], $first: Int = 100, $orderby: [ProductsOrderbyInput] = { field: DATE, order: DESC }) {
   products(
     first: $first
     after: $after

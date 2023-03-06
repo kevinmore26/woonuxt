@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   },
 
   'graphql-client': {
-    codegen: true,
+    codegen: false,
   },
 
   hooks: {

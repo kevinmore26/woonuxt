@@ -22,7 +22,8 @@ export default defineNuxtConfig({
   },
 
   'graphql-client': {
-    codegen: process.env.PUBLIC_INTROSPECTION_ENABLED === 'on',
+    codegen: false,
+
   },
 
   hooks: {

@@ -21,6 +21,9 @@ export default defineNuxtConfig({
     domains: process.env.NUXT_IMAGE_DOMAINS ? process.env.NUXT_IMAGE_DOMAINS.replace(/ /g, '').split(',') : [],
   },
 
+  'graphql-client': {
+    codegen: process.env.PUBLIC_INTROSPECTION_ENABLED === 'on',
+  },
 
   hooks: {
     'pages:extend'(pages) {
